@@ -1,0 +1,11 @@
+{
+  "partnerName": "PartnerA",
+  "endpointUrl": "https://api.partnera.com/endpoint",
+  "callExternalEndpoint": true,
+  "requestMapping": {
+    "partnerId": "id",
+    "customerName": "customer.name",
+    "orderTotal": "order.items.![price * quantity].sum()",
+    "timestamp": "T(java.time.Instant).now().toString()"
+  }
+}
